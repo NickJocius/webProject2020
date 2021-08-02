@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- 
+	Home page for ITSE 1311 Beginning Web Programming Individual Project
+	Author: Nicholas Jocius
+	Date: 4/11/2020
+	Revised:
+
+	file: index.html
+	 -->
+
+	<title>Beyond Stuffed</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<meta name="keywords" content="peppers, stuffed, poblano, restuarant, food, spicy, bell peppers, meat, grilled, dinner, lunch, local">
+	<meta name="description" content="Home page for Beyond Stuffed restuarant">
+	<link rel="stylesheet" type="text/css" href="stuffed_reset.css">
+	<link rel="stylesheet" type="text/css" href="stuffed_layout1.css">
+	<link rel="stylesheet" type="text/css" href="stuffed_style1.css">
+	<link rel="stylesheet" type="text/css" href="stuffedMediaQ.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nanum+Pen+Script&family=Permanent+Marker&family=Rock+Salt&family=Special+Elite&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<script type="text/javascript" src="stuffedJS.js" defer="defer"></script>
+	<script type="text/javascript" src="banner.js" defer="defer"></script>
+	<script type="text/javascript" src="specials.js" defer="defer"></script>
+
+</head>
+
+<body>
+	<div id="titleHead">
+		<img id="titleHeadI" height="250" width="100%" src="images/bellChef.jpg">
+	</div>
+	<header class="titleHead">
+		<!-- <img src="images/BS-logo.png" class="navBG"> -->
+		<img id="titleHead2" height="250" width="90%" src="images/BS-logo2.png">
+	</header>
+
+	<nav id="navDiv">
+		<a  id="navicon" href="#"><i class="fas fa-bars fa-3x" id="hamB"></i></a>
+		<ul class="navbar">
+			<li class="navItem"><a class="navLink" href="">Home</a></li>
+			<li class="navItem"><a class="navLink" href="menu.html">Menu</a></li>
+			<li class="navItem"><a class="navLink" id="specials" onClick="createWindow()" href="">Specials</a></li>
+			<li class="navItem"><a class="navLink" href="todaySpecials.html">Today's Specials</a></li>
+			<li class="navItem"><a class="navLink2" href="#"><i class="fab fa-twitter"></i></a>
+			<li class="navItem"><a class="navLink2" href="#"><i class="fab fa-facebook"></i></a>
+		</ul>
+	</nav>
+	
+	<div class="hmSec1 hmDiv">
+		<blockquote>"Beyond Stuffed has broken down barriers and defined what it means to innovate.  This is the dawn of a new age."</blockquote>
+		<p class="qtAuthor">- Austin's Food Review</p>
+	</div>
+
+	<div class="hmDiv hmSec2"></div>
+
+	<div class="hmDiv hmSec4">
+		<div class="hmSecCard" id="hSc1">
+			<img src="images/juicy.jpg">
+		</div>
+		<div class="hmSecCard" id="hSc2">
+			<img src="images/dry.jpg">
+		</div>
+		<div class="hmSecCard" id="hSc3">
+			<img src="images/greenC.jpg">
+		</div>
+	</div>
+	<section class="hmDiv hmSec5">
+		<div id="hSc4">
+			<h2>About Us</h2>
+		</br>
+			<p>Beyond Suffed opened its doors in the summer of 2003 with our first location off the iconic South Lamar.  Quickly becoming an Austin staple, we branched out in 2005 and added our second location servicing East Austin off 7th street and in 2007 we brought our famous stuffed menu to North Lamar.</p><hr>
+			<p>Our head chef Nick Jocius was born and raised here in Austin, Tx.  He has an unspoken kinship with the people of this city and tailors his recipes to give his own unique spin on this Tex-Mex favorite.</p>
+		</div>
+		<div id="hSc5">
+			<h2>Our Mission</h2>
+		</br>
+			<p>We believe in bringing our unique expertise and designer recipes to every dish we serve.  Giving our customers and experience not soon to be forgotten.  Our chef will take your taste buds on a vacation, combining the tastes of mexico, Italy, and the United States to utterly blow your mind and possibly burn your tongue.</p><hr>
+			<p>Ensuring your meal will be unique, our main menu starts with your choice of pepper, next your choice of stuffing, then a choice from our sauce list and an option to make it a meal.  We also feature inspired daily and seasonal special entrees to keep your tastebuds guessing.</p>
+		</div>
+	</section>
+
+
+	<footer>
+      <nav id="bottom">
+         <ul>
+            <li><a href="#">Online Orders</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#">MyAccount</a></li>
+         </ul>
+         <ul>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Map</a></li>
+         </ul>
+         <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Catering</a></li>
+         </ul>
+      </nav>
+      <p>&#169; <span id="myYear">2020</span> Beyond Stuffed - All Rights Reserved</p>
+   </footer>
+
+</body>
+
+</html>

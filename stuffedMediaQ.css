@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 481px){
+
+	.titleHead img {
+		
+		height: 150px;
+		width: 100%;
+	}
+
+	#titlehead {
+		display: none;
+	}
+
+	.mDes {
+		display: none;
+	}
+
+	#col1, #col2 {
+		width: 25%;
+	}
+
+	body, header, .menuTitle {
+		width: 100%;
+	}
+
+	#navicon {
+		display: block;
+		padding:14px;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	#navicon:hover+.navbar, .navbar:hover {
+		display: block;
+	}
+
+	.hmDiv4 {
+		flex-flow: column wrap;
+	}
+
+	#menuTable {
+		flex-flow: column wrap;
+	}
+
+	#hSc4, #hSc5 {
+		width: 100%;
+	}
+
+	/* For mobile phones: */
+  	[class*="col-"] {width: 100%;}
+
+}
+
+@media only screen and (max-width: 761px){
+
+	body {
+		width: 100%;
+	}
+	
+	.hmDiv4 {
+		flex-flow: column wrap;
+	}
+
+	.hmSecCard {
+		flex-basis: 100%;
+	}
+
+	#hSc4, #hSc5 {
+		width: 100%;
+	}
+
+	#menuTable {
+		flex-flow: column wrap;
+	}
+
+	.formRow {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.subtotal {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	#paySection {
+		flex-flow: column nowrap;
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (min-width: 762px){
+
+	/* For desktop: */
+
+	#paySection {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.formRow {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	.subtotal {
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	
+	
+}
+
+@media only screen and (min-width: 912px){
+
+	/* For desktop: */
+	#paySection {
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+
+	.formRow {
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
+
+	.subtotal {
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+	}
+
+	
+
+}

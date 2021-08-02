@@ -1,0 +1,619 @@
+@charset "utf-8";
+
+/* 
+
+Basic styles and mobile first styles 
+for Individual Project 1311
+
+Author: Nicholas Jocius
+Date: 4/12/2020
+
+file: stuffed_style1.css
+
+*/
+
+/* backgrounds*/
+
+html {
+	background: black url("images/bg-fire.jpg") center center / 100% 100% no-repeat;
+	scroll-behavior: smooth;
+}
+
+.titleHead, #titleHead {
+	background-color: black;
+}
+
+#titleHead {
+	width:100%;
+	height: 100px;
+	margin:0px;
+}
+
+/* Body Styles */
+body {
+	box-shadow: 25px 0px 40px #090909, -25px 0px 40px #090909;
+}
+
+
+
+/* imgs */
+#titleHead2 {
+	border-radius: 50px 50px 0px 0px;
+}
+
+
+/* navbar */
+#navDiv {
+	background: #000;
+}
+
+#navicon {
+	display: none;
+}
+
+.navLink {
+	color:#FB9466;
+	font-size: 18px;
+	font-family: 'Bangers',cursive;
+}
+
+.navLink2 {
+	color:#FA4B3E;
+	font-size: 18px;
+}
+
+.navLink:hover {
+	color: #F76024;
+	text-shadow: 1px 1px 10px #F78D03, 2px 2px 10px #FDE6DA;
+}
+
+.navLink2:hover {
+	text-shadow: 1px 1px 20px #FCE5E0;
+}
+
+.navLink:visited {
+	color:#F6B18F;
+}
+
+#hamB {
+	color:#FFFFFF;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+/* Home page content */
+
+.hmSec1 {
+	font-size: 36px;
+	padding:10%;
+	background: #1B0101;
+	color:#FA4B3E; 
+	text-shadow: 1px 0px 1px #FAC1C1;
+	opacity: 95%;
+	font-family: 'Special Elite', cursive;
+}
+
+.hmSec2 {
+	background: url("images/kitchen.jpg") center center / cover no-repeat fixed;
+	padding:80px;
+}
+
+.hmSec4 {
+	background-color: #FEFEFE;
+}
+
+.hmSecCard {
+	box-shadow: 2px 2px 15px #3D3030;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #000;
+	padding:0px;
+	justify-content: center;
+	align-content: center;
+}
+
+.hmSecCard img {
+	transform: scale(.8);
+	max-width: 100%;
+}
+
+#hSc4 {
+	font-size: 24px;
+	color:#2C0E04;
+	text-shadow: 1px 0px 1px #FAC1C1;
+	box-shadow: 2px 2px 15px #3D3030; 
+	text-align: left;
+	line-height: 1.2em;
+	font-family: 'Nanum Pen Script',cursive;
+}
+
+#hSc4 h2, #hSc5 h2 {
+	text-align: center;
+	font-weight: bolder;
+	font-family: 'Permanent Marker',cursive;
+}
+
+#hSc5 {
+	font-size: 24px;
+	color:#2C0E04;
+	text-shadow: 1px 0px 1px #FAC1C1;
+	box-shadow: 2px 2px 15px #3D3030;
+	text-align: left;
+	line-height: 1.2em;
+	font-family: 'Nanum Pen Script',cursive;
+}
+
+#hSc4 p::first-line, #hSc5 p::first-line {
+	text-indent: 5%;
+}
+
+.hmSec5 {
+	background: black url("images/brick.jpg") center center / 100% 100% no-repeat fixed;
+}
+
+
+
+/* Menu Content */
+
+.menuTitle {
+	font-size: 44px;
+	background-color: #1B0101;
+	border-bottom: solid 5px #000;
+	width: 100%;
+	text-align: center;
+	color:#FA4B3E;
+	padding-top: 15px;
+	text-shadow: 1px 0px 1px #FAC1C1;
+}
+
+#menuTitle {
+	padding:5px;
+	font-family: "Permanent Marker", cursive;
+
+}
+
+#menuTable {
+	background: #FFFFFF;
+}
+
+#mImage img {
+	transform: scale(.9);
+	border-radius: 50%;
+	border:1px solid rgba(96,4,4,.5);
+	padding:15px;
+}
+
+#mImage {
+	text-align: center;
+}
+
+div#menuTable {
+	display: flex;
+	font-size:20px;
+   -webkit-flex: 1 1 200px;
+   flex: 1 1 200px; 
+   max-width: 100%;  
+   padding:5px;
+   border-width: 5px;
+   border-style: solid;
+   border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+div#menuT {
+   display: flex;
+   flex-flow: row wrap;
+   font-size: 1.4em;
+   border-collapse:collapse;
+   max-width: 100%;
+  
+}
+
+
+div#menuTable table th, div#menuTable table td {
+  vertical-align: top;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+
+div#menuTable table tr:nth-of-type(even) {
+   background-color: rgb(221, 204, 177);
+}
+
+div#menuTable table tr td:nth-of-type(1), div#menuTable table tr td:nth-of-type(2), div#menuTable table tr td:nth-of-type(3) {
+   text-align: center;
+}
+
+div#menuTable table th {
+   background-color: #1B0101;
+   color: rgb(231, 231, 231);
+   padding: 10px;
+   font-size: 18px;
+   font-family: "Special Elite", cursive;
+}
+
+div#menuTable table td {
+   padding: 5px;
+   font-family: 'Nanum Pen Script', cursive;
+}
+
+div#menuTable table tr:last-of-type {
+   border-top: 6px double rgb(109, 80, 53);
+   background-color: white;
+   font-size: 1.3em;
+}
+
+div#menuTable table tr {
+   text-align: center;
+}
+
+col#col1 {
+	width: 50%;
+}
+
+col#col2 {
+	width: 25%;
+}
+
+/* Footer Styles */
+
+footer {
+   width: 100%;
+}
+
+footer p {
+   color: rgb(211, 211, 211);
+   font-size: 0.9em;
+   text-align: center;
+   background-color: black;
+   margin: 0px;
+   padding: 10px 0px;
+}
+
+
+/* Bottom Navigation List Styles */
+
+nav#bottom {
+   background-color: #1B0101;
+   color: rgb(211, 211, 211);
+   padding: 15px;
+}
+
+nav#bottom ul li {
+   font-size: 1em;
+   line-height: 1.8em;
+}
+
+nav#bottom ul a {
+   color: white;
+   font-family: 'Rock Salt', cursive;
+}
+
+
+
+/* Bottom Navigation Styles */
+
+nav#bottom {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+nav#bottom ul {
+   flex: 0 1 150px;
+}
+
+#bottom a:hover {
+	color: #F76024;
+	text-shadow: 1px 1px 10px #F78D03, 2px 2px 10px #FDE6DA;
+}
+
+.navLink2:hover {
+	text-shadow: 1px 1px 20px #FCE5E0;
+}
+
+#bottom a:visited {
+	color:#F6B18F;
+}
+
+footer {
+	font-family: 'Permanent Marker', cursive;
+}
+
+/* Todays Special Order Form */
+
+#orderForm {
+	background-image: linear-gradient(to right, #5C150B 10% ,#F68C0F 10%);
+	min-width: 100%;
+}
+
+legend {
+	font-family: 'Permanent Marker',cursive;
+	font-size: 2em;
+}
+
+label {
+	font-family: 'Bangers',cursive;
+	font-size: 1.3em;
+}
+
+#orderB1,#orderB2 {
+	margin-right: .8em;
+	margin-left: .8em;
+}
+
+.subtotal input,label, button {
+	margin-left: .5em;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+.formRow label {
+	margin-right: .5em;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+.formRow input,  {
+	margin-top: .5em;
+}
+/* Order Table Styles */
+
+#orderTable {
+   margin: 30px 0px 0px 45px;
+   width: 40%;
+   border-collapse: collapse;
+   color: black;
+}
+
+
+#order input {
+   background-color: transparent;
+   border: none;
+   color: rgb(151, 151, 151);
+   margin-left: 5em;
+}
+
+
+#orderTable caption {
+   font-size: 1.3em;
+   text-align: left;
+   color: black;
+   font-family: 'Permanent Marker',cursive;
+}
+
+#orderTable td {
+	font-family: 'Special Elite',cursive;
+	font-size: 1em;
+	border:none;
+	padding:.7em;
+}
+
+#orderTable td {
+   height: 20px;
+   vertical-align: top;
+}
+
+#order input#orderDate {
+   text-align: right;
+}
+
+#order input#qty {
+   width: 3em;
+}
+
+#order input#modelName, #order #protectionName {
+   width: 15em;
+}
+
+#orderTable input {
+	background-color: transparent;
+	font-family: 'Special Elite',cursive;
+	font-size: 1em;
+	border:none;
+}
+
+#orderTable tr:first-of-type {
+   border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+#orderTable tr td:last-of-type input {
+   text-align: right;
+   border: none;
+}
+
+#orderTable tr:nth-of-type(3) {
+   border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+#orderTable tr:nth-of-type(2) td, #orderTable tr:nth-of-type(4) td {
+   padding-top: 15px;
+}
+
+#orderTable tr:nth-of-type(5) td {
+   border-bottom: 4px double rgb(151, 151, 151);
+}
+
+#orderTable tr:last-of-type td {
+   padding-top: 15px;
+}
+
+#orderTable td.rightA {
+   text-align: right;
+   padding-right: 10px;
+}
+
+
+
+/* Payment Form Styles */
+
+.formRowPay {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	flex:1 1 400px;
+	font-size: 1.5em;
+	font-family: 'Permanent Marker',cursive;
+	color:black;
+}
+
+#paySection {
+   -webkit-flex: 1 1 400px;
+   flex: 1 1 400px;
+   border-left: 4px double rgb(101, 101, 101);   
+   min-height: 300px;
+
+}
+
+#paySection #payment #cards {
+   display: block;
+   clear: left;
+}
+
+#paySection #footnote {
+   font-size: 1em;
+   text-align: left;
+   margin: 0px 10px 20px 140px;
+}
+
+#payment fieldset {
+   border: none;
+
+}
+
+#creditcard {
+	background-color: rgba(60,3,3,.05);
+}
+#payment #cards label:first-of-type {
+   text-align: right;
+   margin-left: 50px;
+}
+
+#payment legend {
+   font-size: 1.3em;
+   padding: 8px;
+   width: 80%;
+   text-align: left;
+   margin-left: 50px;
+   margin-bottom: 20px;
+   color: rgb(57, 44, 28);
+}
+
+
+/* Input and Label Styles */
+
+#payment label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 0.9em;
+   margin-bottom: 20px;
+   margin-right: 10px;
+   width: 180px;
+   text-align: right;
+   color: rgb(57, 44, 28);
+}
+
+
+#payment input, #payment select {
+   display: block;
+   float: left; 
+}
+
+/* Radio Button Styles */
+
+#payment label.cardLabel {
+   display: inline-block;
+   float: none;
+   width: auto;
+}
+
+#payment fieldset#cards img {
+   display: inline-block;
+   margin-left: 5px;
+}
+
+
+#payment input[type='radio'] {
+   display: inline-block;
+   width: auto;
+   float: none;
+   clear: none;
+}
+
+#payment fieldset#cards {
+   text-align: left;
+   margin-left: 50px;
+}
+
+#payment span {
+   width: 30px;
+   text-align: center;
+   display: block;
+   float: left;
+}
+
+#payment #cvc {
+   width: 3em;
+}
+
+#payment #subButton {
+   display: block;
+   width: 180px;
+   height: 35px;
+   margin: 15px 0px 10px 200px;
+   background-color: rgba(232, 218, 201, 0.8);
+   font-size: 1.3em;
+   border-radius: 20px;
+   float: none;
+}
+
+/* Valid and Invalid Styles */
+
+input:invalid, input:focus:invalid, select:invalid, select:focus:invalid {
+   outline: none;
+   background-color: rgba(250,10,10,0.2);
+ }
+
+input:valid, input:focus:valid, select:valid, select:focus:valid {
+   outline: none;
+   background-color: none;
+}
+
+
+/* vaild order */
+#orderSubmitted {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	padding:4em;
+	background-color: white;
+}
+
+#submitDiv {
+	font-size: 3em;
+	padding:2em;
+}
+
+
+/* Google Fonts
+
+font-family: 'Permanent Marker', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Nanum Pen Script', cursive;*/
